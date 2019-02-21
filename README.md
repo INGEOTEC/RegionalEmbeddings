@@ -1,10 +1,10 @@
 # FastText Word Embeddings for Spanish Language Variations
 
 This repository contains word embeddings for several Spanish language variations created from Twitter data.
-The data was collected from Twiter's public stream between the period Dec. 2015 to Dec. 2018 using the Twitter's API.
+The data was collected from Twitter's public stream between the period Dec. 2015 to Dec. 2018 using the Twitter's API.
 Each tweet in the collection is geolocalized and labeled as Spanish by Twitter (`lang="es"` in the API); it also contains at least one Spanish's _stop word_. The last condition is a consequence of the query used to capture tweets from the stream. For the interested reader, the stopword's list contains 400 common words, more precisely, articles, prepositions, interjections along other typical words.
 
-Using this methodology, we collected close to 660 geolocalized million tweets from 185 countries.
+Using this methodology, we collected close to 660 geolocalized million tweets from 185 countries...
 
 # Download instructions
 
