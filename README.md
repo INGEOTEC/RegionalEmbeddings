@@ -10,9 +10,9 @@ To ensure a minimum amount of information in each tweet of the collection, we di
 
 The next table describes our final dataset.
 
-+--------------------------+------+----------+--------+-----------+
+
 | Country                  | Code | \#users  |\#tweets| \#tokens  |
-+--------------------------+------+----------+--------+-----------+
+|--------------------------|------|----------|--------|-----------|
 | Argentina                |  AR  | 1,199.5K | 175.7M | 2,325.0M  |
 | Bolivia                  |  BO  | 28.4K    | 0.8M   |    14.1M  |
 | Chile                    |  CL  | 358.0K   | 32.7M  |   543.3M  |
@@ -34,13 +34,12 @@ The next table describes our final dataset.
 | Spain                    |  ES  | 1,112.1K | 91.0M  | 1,496.6M  |
 | Uruguay                  |  UY  | 135.4K   | 22.2M  |   276.8M  |
 | Venezuela                |  VE  | 386.9K   | 29.3M  |   480.9M  |
-+--------------------------+------+----------+--------+-----------+
+|--------------------------|------|----------|--------|-----------|
 | Brazil                   |  BR  | 1,315.6K | 9,5M   |  85.8M    |
 | Canada                   |  CA  | 122.2K   | 0.9M   |  14.5M    |
 | France                   |  FR  | 244.0K   | 1.4M   |  20.4M    |
 | Great Britain            |  GB  | 316.3K   | 1.7M   |  25.4M    |
 | United States of America |  US  | 2,256.6K | 26.2M  | 366.1M    |
-+--------------------------+------+----------+--------+-----------+
 
 In addition to the country's population; the number of tweeter vary different among countries perhaps due to social and economic conditions.
 
