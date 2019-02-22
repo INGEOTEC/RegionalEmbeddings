@@ -1,6 +1,7 @@
 # FastText Word Embeddings for Spanish Language Variations
 
-This repository contains word embeddings for several Spanish language variations created from Twitter data.
+This repository contains word embeddings for several Spanish language variations created from Twitter data. It is intended to fill the gap of regionalize semantic representations with the idea that region semanic is captured whenever we select our dataset, such that language processing tasks being culture-aware find this embeddings useful.
+
 The data was collected from Twitter's public stream between the period Dec. 2015 to Dec. 2018 using the Twitter's API.
 Each tweet in the collection is geolocalized and labeled as Spanish by Twitter (`lang="es"` in the API); it also contains at least one Spanish's _stop word_. The last condition is a consequence of the query used to capture tweets from the stream. For the interested reader, the stopword's list contains 400 common words, more precisely, articles, prepositions, interjections along other typical words.
 
@@ -9,7 +10,7 @@ around 1% of the full stream, and that there is a small proportion between those
 We select 21 countries having Spanish as one of their official languages,[^1]. From the rest of the world, we select Brazil, Canada, Great Britain, France, and Uninated States of America due to the large number of collected tweets in our dataset corresponding to these countries, but also because these countries have a well known migration, business, and tourism activities of Spanish speakers. 
 To ensure a minimum amount of information in each tweet of the collection, we discard those tweets with at less than five tokens; where each token correspond to some word or punctuation symbol. We also removed all retweets, since the original tweet may not be generated at the claimed country. After this filtering procedure, we retain more than 586 million tweets.
 
-The next table describes our datasets.
+The next table describes our Spanish datasets.
 
 
 | Country                  | Code | \#users  | \#tweets | \#tokens  |
@@ -44,9 +45,18 @@ The next table describes our datasets.
 
 In addition to the country's population; the number of tweeters vary different due to social and economic conditions, internet access, and obviously, Twitter's permeation in that country.
 
-In particular, we remove Equatorial Guinea due to the lack of enough
-mass to create embeddings.
+In particular, we skip Equatorial Guinea due to the small number of samples.
 
+.... this repo is a work in progress ....
+
+# Models
+Our models were created with fastText [https://fasttext.cc/](https://fasttext.cc/); using the explained preprocessing stage. A module to perform the same preprocessing is available in this repository (XXX.py).
+
+## Preprocessing
+....
+
+
+## Using our models
 ....
 
 # Download instructions
