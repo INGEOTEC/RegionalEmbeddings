@@ -4,7 +4,8 @@ This repository contains word embeddings for several Spanish language variations
 The data was collected from Twitter's public stream between the period Dec. 2015 to Dec. 2018 using the Twitter's API.
 Each tweet in the collection is geolocalized and labeled as Spanish by Twitter (`lang="es"` in the API); it also contains at least one Spanish's _stop word_. The last condition is a consequence of the query used to capture tweets from the stream. For the interested reader, the stopword's list contains 400 common words, more precisely, articles, prepositions, interjections along other typical words.
 
-Using this methodology, we collected close to 660 geolocalized million tweets from 185 countries.
+Using this methodology, we collected close to 660 geolocalized million tweets from 185 countries. Please recall that Twitter makes public
+around 1% of the full stream, and that there is a small proportion between those tweets having geolocation and those without it.
 We select 21 countries having Spanish as one of their official languages,[^1]. From the rest of the world, we select Brazil, Canada, Great Britain, France, and Uninated States of America due to the large number of collected tweets in our dataset corresponding to these countries, but also because these countries have a well known migration, business, and tourism activities of Spanish speakers. 
 To ensure a minimum amount of information in each tweet of the collection, we discard those tweets with at less than five tokens; where each token correspond to some word or punctuation symbol. We also removed all retweets, since the original tweet may not be generated at the claimed country. After this filtering procedure, we retain more than 586 million tweets.
 
@@ -42,6 +43,9 @@ The next table describes our datasets.
 | United States of America |  US  | 2,256.6K |   26.2M  |   366.1M  |
 
 In addition to the country's population; the number of tweeters vary different due to social and economic conditions, internet access, and obviously, Twitter's permeation in that country.
+
+In particular, we remove Equatorial Guinea due to the lack of enough
+mass to create embeddings.
 
 ....
 
