@@ -8,44 +8,42 @@ Using this methodology, we collected close to 660 geolocalized million tweets fr
 We select 21 countries having Spanish as one of their official languages,[^1]. From the rest of the world, we select Brazil, Canada, Great Britain, France, and Uninated States of America due to the large number of collected tweets in our dataset corresponding to these countries, but also because these countries have a well known migration, business, and tourism activities of Spanish speakers. 
 To ensure a minimum amount of information in each tweet of the collection, we discard those tweets with at less than five tokens; where each token correspond to some word or punctuation symbol. We also removed all retweets, since the original tweet may not be generated at the claimed country. After this filtering procedure, we retain more than 586 million tweets.
 
-The next table describes our final dataset.
+The next table describes our datasets.
 
 
-| Country                  | Code | \#users  |\#tweets| \#tokens  |
-|--------------------------|------|----------|--------|-----------|
-| Argentina                |  AR  | 1,199.5K | 175.7M | 2,325.0M  |
-| Bolivia                  |  BO  | 28.4K    | 0.8M   |    14.1M  |
-| Chile                    |  CL  | 358.0K   | 32.7M  |   543.3M  |
-| Colombia                 |  CO  | 601.6K   | 44.7M  |   686.9M  |
-| Costa Rica               |  CR  | 67.2K    | 5.8M   |    81.3M  |
-| Cuba                     |  CU  | 24.8K    | 0.3M   |     4.1M  |
-| Dominican Republic       |  DO  | 95.1K    | 5.5M   |    89.0M  |
-| Ecuador                  |  EC  | 178.3K   | 9.8M   |   162.9M  |
-| El Salvador              |  SV  | 37.4K    | 1.8M   |    29.5M  |
-| Equatorial Guinea        |  GQ  | 0.6K     | 5.9K   |     0.1M  |
-| Guatemala                |  GT  | 63.7K    | 3.8M   |    57.7M  |
-| Honduras                 |  HN  | 28.4K    | 1.4M   |    21.5M  |
-| Mexico                   |  MX  | 1,305.3K | 85.0M  | 1,247.3M  |
-| Nicaragua                |  NI  | 29.5K    | 2.5M   |    33.7M  |
-| Panama                   |  PA  | 69.2K    | 4.5M   |    75.9M  |
-| Paraguay                 |  PY  | 88.9K    | 7.3M   |   105.2M  |
-| Peru                     |  PE  | 232.5K   | 11.3M  |   181.0M  |
-| Puerto Rico              |  PR  | 15.9K    | 0.5M   |     7.0M  |
-| Spain                    |  ES  | 1,112.1K | 91.0M  | 1,496.6M  |
-| Uruguay                  |  UY  | 135.4K   | 22.2M  |   276.8M  |
-| Venezuela                |  VE  | 386.9K   | 29.3M  |   480.9M  |
-|--------------------------|------|----------|--------|-----------|
-| Brazil                   |  BR  | 1,315.6K | 9,5M   |  85.8M    |
-| Canada                   |  CA  | 122.2K   | 0.9M   |  14.5M    |
-| France                   |  FR  | 244.0K   | 1.4M   |  20.4M    |
-| Great Britain            |  GB  | 316.3K   | 1.7M   |  25.4M    |
-| United States of America |  US  | 2,256.6K | 26.2M  | 366.1M    |
+| Country                  | Code | \#users  | \#tweets | \#tokens  |
+|--------------------------|------|----------|----------|-----------|
+| Argentina                |  AR  | 1,199.5K |  175.7M  | 2,325.0M  |
+| Bolivia                  |  BO  | 28.4K    |    0.8M  |    14.1M  |
+| Chile                    |  CL  | 358.0K   |   32.7M  |   543.3M  |
+| Colombia                 |  CO  | 601.6K   |   44.7M  |   686.9M  |
+| Costa Rica               |  CR  | 67.2K    |    5.8M  |    81.3M  |
+| Cuba                     |  CU  | 24.8K    |    0.3M  |     4.1M  |
+| Dominican Republic       |  DO  | 95.1K    |    5.5M  |    89.0M  |
+| Ecuador                  |  EC  | 178.3K   |    9.8M  |   162.9M  |
+| El Salvador              |  SV  | 37.4K    |    1.8M  |    29.5M  |
+| Equatorial Guinea        |  GQ  | 0.6K     |    5.9K  |     0.1M  |
+| Guatemala                |  GT  | 63.7K    |    3.8M  |    57.7M  |
+| Honduras                 |  HN  | 28.4K    |    1.4M  |    21.5M  |
+| Mexico                   |  MX  | 1,305.3K |   85.0M  | 1,247.3M  |
+| Nicaragua                |  NI  | 29.5K    |    2.5M  |    33.7M  |
+| Panama                   |  PA  | 69.2K    |    4.5M  |    75.9M  |
+| Paraguay                 |  PY  | 88.9K    |    7.3M  |   105.2M  |
+| Peru                     |  PE  | 232.5K   |   11.3M  |   181.0M  |
+| Puerto Rico              |  PR  | 15.9K    |    0.5M  |     7.0M  |
+| Spain                    |  ES  | 1,112.1K |   91.0M  | 1,496.6M  |
+| Uruguay                  |  UY  | 135.4K   |   22.2M  |   276.8M  |
+| Venezuela                |  VE  | 386.9K   |   29.3M  |   480.9M  |
+|  -                       |  -   | -        |   -      | -         |
+| Brazil                   |  BR  | 1,315.6K |    9,5M  |    85.8M  |
+| Canada                   |  CA  | 122.2K   |    0.9M  |    14.5M  |
+| France                   |  FR  | 244.0K   |    1.4M  |    20.4M  |
+| Great Britain            |  GB  | 316.3K   |    1.7M  |    25.4M  |
+| United States of America |  US  | 2,256.6K |   26.2M  |   366.1M  |
 
-In addition to the country's population; the number of tweeter vary different among countries perhaps due to social and economic conditions.
+In addition to the country's population; the number of tweeters vary different due to social and economic conditions, internet access, and obviously, Twitter's permeation in that country.
 
 ....
-
-[^1] [List of countries where Spanish is an official language](https://en.wikipedia.org/wiki/List_of_countries_where_Spanish_is_an_official_language)
 
 # Download instructions
 
@@ -105,3 +103,6 @@ In addition to the country's population; the number of tweeter vary different am
 ``` curl -o es-GB-100d.zip "http://ingeotec.mx/~sadit/regional-embeddings/es-GB-100d.zip" ```
 ###  United States of America (US)
 ``` curl -o es-US-100d.zip "http://ingeotec.mx/~sadit/regional-embeddings/es-US-100d.zip" ```
+
+
+[^1]: [List of countries where Spanish is an official language](https://en.wikipedia.org/wiki/List_of_countries_where_Spanish_is_an_official_language)
